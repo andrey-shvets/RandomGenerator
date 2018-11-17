@@ -57,7 +57,7 @@ namespace RandomGenerator
                 {
                     labels[i, j] = new Label();
                     labels[i, j].Text = numbers[i, j].ToString();
-                    labels[i, j].SetBounds(5 + (i + 1) * 27, 5 + (j + 1) * 17, 25, 15);
+                    labels[i, j].SetBounds(5 + (i + 1) * 32, 5 + (j + 1) * 17, 30, 15);
                     numbersGroupBox.Controls.Add(labels[i, j]);
                 }
 
