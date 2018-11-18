@@ -32,14 +32,14 @@
             this.moreCheckBox = new System.Windows.Forms.CheckBox();
             this.dividedByTenCheckBox = new System.Windows.Forms.CheckBox();
             this.filterButton = new System.Windows.Forms.Button();
-            this.widthNumericUpDown = new System.Windows.Forms.NumericUpDown();
-            this.heightNumericUpDown = new System.Windows.Forms.NumericUpDown();
+            this.columnsNumericUpDown = new System.Windows.Forms.NumericUpDown();
+            this.rowsNumericUpDown = new System.Windows.Forms.NumericUpDown();
             this.fillButton = new System.Windows.Forms.Button();
             this.secondNumericUpDown = new System.Windows.Forms.NumericUpDown();
             this.firstNumericUpDown = new System.Windows.Forms.NumericUpDown();
             this.numbersGroupBox = new System.Windows.Forms.GroupBox();
-            ((System.ComponentModel.ISupportInitialize)(this.widthNumericUpDown)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.heightNumericUpDown)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.columnsNumericUpDown)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.rowsNumericUpDown)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.secondNumericUpDown)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.firstNumericUpDown)).BeginInit();
             this.SuspendLayout();
@@ -48,7 +48,7 @@
             // 
             this.lessCheckBox.AutoSize = true;
             this.lessCheckBox.Location = new System.Drawing.Point(160, 8);
-            this.lessCheckBox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.lessCheckBox.Margin = new System.Windows.Forms.Padding(2);
             this.lessCheckBox.Name = "lessCheckBox";
             this.lessCheckBox.Size = new System.Drawing.Size(47, 17);
             this.lessCheckBox.TabIndex = 0;
@@ -60,7 +60,7 @@
             // 
             this.moreCheckBox.AutoSize = true;
             this.moreCheckBox.Location = new System.Drawing.Point(160, 27);
-            this.moreCheckBox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.moreCheckBox.Margin = new System.Windows.Forms.Padding(2);
             this.moreCheckBox.Name = "moreCheckBox";
             this.moreCheckBox.Size = new System.Drawing.Size(47, 17);
             this.moreCheckBox.TabIndex = 1;
@@ -72,7 +72,7 @@
             // 
             this.dividedByTenCheckBox.AutoSize = true;
             this.dividedByTenCheckBox.Location = new System.Drawing.Point(160, 47);
-            this.dividedByTenCheckBox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.dividedByTenCheckBox.Margin = new System.Windows.Forms.Padding(2);
             this.dividedByTenCheckBox.Name = "dividedByTenCheckBox";
             this.dividedByTenCheckBox.Size = new System.Drawing.Size(43, 17);
             this.dividedByTenCheckBox.TabIndex = 2;
@@ -82,7 +82,7 @@
             // filterButton
             // 
             this.filterButton.Location = new System.Drawing.Point(160, 66);
-            this.filterButton.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.filterButton.Margin = new System.Windows.Forms.Padding(2);
             this.filterButton.Name = "filterButton";
             this.filterButton.Size = new System.Drawing.Size(70, 25);
             this.filterButton.TabIndex = 3;
@@ -90,47 +90,47 @@
             this.filterButton.UseVisualStyleBackColor = true;
             this.filterButton.Click += new System.EventHandler(this.filterButton_Click);
             // 
-            // widthNumericUpDown
+            // columnsNumericUpDown
             // 
-            this.widthNumericUpDown.Location = new System.Drawing.Point(8, 29);
-            this.widthNumericUpDown.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.widthNumericUpDown.Maximum = new decimal(new int[] {
+            this.columnsNumericUpDown.Location = new System.Drawing.Point(8, 29);
+            this.columnsNumericUpDown.Margin = new System.Windows.Forms.Padding(2);
+            this.columnsNumericUpDown.Maximum = new decimal(new int[] {
             15,
             0,
             0,
             0});
-            this.widthNumericUpDown.Minimum = new decimal(new int[] {
+            this.columnsNumericUpDown.Minimum = new decimal(new int[] {
             1,
             0,
             0,
             0});
-            this.widthNumericUpDown.Name = "widthNumericUpDown";
-            this.widthNumericUpDown.Size = new System.Drawing.Size(80, 20);
-            this.widthNumericUpDown.TabIndex = 4;
-            this.widthNumericUpDown.Value = new decimal(new int[] {
+            this.columnsNumericUpDown.Name = "columnsNumericUpDown";
+            this.columnsNumericUpDown.Size = new System.Drawing.Size(80, 20);
+            this.columnsNumericUpDown.TabIndex = 4;
+            this.columnsNumericUpDown.Value = new decimal(new int[] {
             5,
             0,
             0,
             0});
             // 
-            // heightNumericUpDown
+            // rowsNumericUpDown
             // 
-            this.heightNumericUpDown.Location = new System.Drawing.Point(8, 8);
-            this.heightNumericUpDown.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.heightNumericUpDown.Maximum = new decimal(new int[] {
+            this.rowsNumericUpDown.Location = new System.Drawing.Point(8, 8);
+            this.rowsNumericUpDown.Margin = new System.Windows.Forms.Padding(2);
+            this.rowsNumericUpDown.Maximum = new decimal(new int[] {
             20,
             0,
             0,
             0});
-            this.heightNumericUpDown.Minimum = new decimal(new int[] {
+            this.rowsNumericUpDown.Minimum = new decimal(new int[] {
             1,
             0,
             0,
             0});
-            this.heightNumericUpDown.Name = "heightNumericUpDown";
-            this.heightNumericUpDown.Size = new System.Drawing.Size(80, 20);
-            this.heightNumericUpDown.TabIndex = 5;
-            this.heightNumericUpDown.Value = new decimal(new int[] {
+            this.rowsNumericUpDown.Name = "rowsNumericUpDown";
+            this.rowsNumericUpDown.Size = new System.Drawing.Size(80, 20);
+            this.rowsNumericUpDown.TabIndex = 5;
+            this.rowsNumericUpDown.Value = new decimal(new int[] {
             3,
             0,
             0,
@@ -139,7 +139,7 @@
             // fillButton
             // 
             this.fillButton.Location = new System.Drawing.Point(8, 112);
-            this.fillButton.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.fillButton.Margin = new System.Windows.Forms.Padding(2);
             this.fillButton.Name = "fillButton";
             this.fillButton.Size = new System.Drawing.Size(70, 25);
             this.fillButton.TabIndex = 6;
@@ -150,7 +150,7 @@
             // secondNumericUpDown
             // 
             this.secondNumericUpDown.Location = new System.Drawing.Point(8, 87);
-            this.secondNumericUpDown.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.secondNumericUpDown.Margin = new System.Windows.Forms.Padding(2);
             this.secondNumericUpDown.Maximum = new decimal(new int[] {
             200,
             0,
@@ -173,7 +173,7 @@
             // firstNumericUpDown
             // 
             this.firstNumericUpDown.Location = new System.Drawing.Point(8, 66);
-            this.firstNumericUpDown.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.firstNumericUpDown.Margin = new System.Windows.Forms.Padding(2);
             this.firstNumericUpDown.Maximum = new decimal(new int[] {
             200,
             0,
@@ -210,18 +210,18 @@
             this.Controls.Add(this.secondNumericUpDown);
             this.Controls.Add(this.firstNumericUpDown);
             this.Controls.Add(this.fillButton);
-            this.Controls.Add(this.heightNumericUpDown);
-            this.Controls.Add(this.widthNumericUpDown);
+            this.Controls.Add(this.rowsNumericUpDown);
+            this.Controls.Add(this.columnsNumericUpDown);
             this.Controls.Add(this.filterButton);
             this.Controls.Add(this.dividedByTenCheckBox);
             this.Controls.Add(this.moreCheckBox);
             this.Controls.Add(this.lessCheckBox);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.MaximumSize = new System.Drawing.Size(700, 500);
             this.MinimumSize = new System.Drawing.Size(700, 500);
             this.Name = "MainForm";
-            ((System.ComponentModel.ISupportInitialize)(this.widthNumericUpDown)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.heightNumericUpDown)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.columnsNumericUpDown)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.rowsNumericUpDown)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.secondNumericUpDown)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.firstNumericUpDown)).EndInit();
             this.ResumeLayout(false);
@@ -235,8 +235,8 @@
         private System.Windows.Forms.CheckBox moreCheckBox;
         private System.Windows.Forms.CheckBox dividedByTenCheckBox;
         private System.Windows.Forms.Button filterButton;
-        private System.Windows.Forms.NumericUpDown widthNumericUpDown;
-        private System.Windows.Forms.NumericUpDown heightNumericUpDown;
+        private System.Windows.Forms.NumericUpDown columnsNumericUpDown;
+        private System.Windows.Forms.NumericUpDown rowsNumericUpDown;
         private System.Windows.Forms.Button fillButton;
         private System.Windows.Forms.NumericUpDown secondNumericUpDown;
         private System.Windows.Forms.NumericUpDown firstNumericUpDown;
